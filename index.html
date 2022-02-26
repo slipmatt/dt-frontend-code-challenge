@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" href="data:,">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-		<title>DT Frontend Code Challenge</title>
-	</head>
-	<body>
-		<h1>DT Frontend Code Challenge</h1>
-		<script type="module" src="/main.js"></script>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:,">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>DT Frontend Code Challenge</title>
+</head>
+<body>
+    <form class="dt-form">
+        <div class="form-group">
+            <label>
+                Input 1
+                <input type="text" name="Input1" class="form-input-text" />
+            </label>
+        </div>
+        <div class="form-group">
+            <label>
+                Input 2
+                <input type="text" name="Input2" class="form-input-text" />
+            </label>
+        </div>
+        <div class="form-group">
+            <label>
+                Input 3
+                <input type="text" name="day-input" class="day-input" />
+                <input type="text" name="month-input" class="month-input" />
+                <input type="text" name="year-input" class="year-input" />
+            </label>
+        </div>
+
+        <div class="form-buttons">
+            <input type="button" class="back-button" value="Back" />
+            <input type="button" class="next-button" value="Next" />
+        </div>
+    </form>
+    <script type="module" src="/main.js"></script>
+
+</body>
 </html>
