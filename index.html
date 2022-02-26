@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="data:,">
+    <script src="https://use.fontawesome.com/028320d20f.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>DT Frontend Code Challenge</title>
 </head>
 <body>
-    <form class="dt-form">
-        <div class="form-group">
-            <label>
-                Input 1
-                <input type="text" name="Input1" class="form-input-text" />
-            </label>
-        </div>
-        <div class="form-group">
-            <label>
-                Input 2
-                <input type="text" name="Input2" class="form-input-text" />
-            </label>
-        </div>
-        <div class="form-group">
-            <label>
-                Input 3
-                <input type="text" name="day-input" class="day-input" />
-                <input type="text" name="month-input" class="month-input" />
-                <input type="text" name="year-input" class="year-input" />
-            </label>
-        </div>
+    <div class="container gradient">
+        <form class="dt-form gradient shadow">
+            <div class="form-group">
+                <h3>Sample Wizard form app</h3>
+            </div>
+            <div class="form-group">
+                <label>
+                    Input 1
+                    <input type="text" name="Input1" class="form-input-text" />
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Input 2
+                    <input type="text" name="Input2" class="form-input-text" />
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Input 3</label>
+                <div class="date-group">
+                    <input type="text" name="day-input" class="input day-input" placeholder="DD" />
+                    <input type="text" name="month-input" class="input month-input" placeholder="MM" />
+                    <input type="text" name="year-input" class="input year-input" placeholder="YYYY" />
+                    <i class="fa fa-calendar-o"></i>
+                </div>
+            </div>
 
-        <div class="form-buttons">
-            <input type="button" class="back-button" value="Back" />
-            <input type="button" class="next-button" value="Next" />
-        </div>
-    </form>
+            <div class="form-buttons">
+                <input type="button" class="button back-button gradient shadow" value="Back" />
+                <input type="button" class="button next-button action-gradient shadow" value="Next" />
+            </div>
+        </form>
+    </div>
     <script type="module" src="/main.js"></script>
 
 </body>
